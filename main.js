@@ -9,7 +9,7 @@ request.onload = function() {
     var data = JSON.parse(request.responseText);
 
     var lastContributor = data.contents[data.contents.length-1].connected_by_user_slug;
-    if (lastContributor == 'nazli-ercan') {
+    if (lastContributor == 'tom') {
       document.getElementById('uc-logo').src = 'https://saiyu.org/space.png';
     } else {
       document.getElementById('uc-logo').src = 'https://saiyu.org/space.png';
