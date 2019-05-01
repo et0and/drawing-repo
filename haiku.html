@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>Haiku</title>
+     <link href="haiku.css" rel="stylesheet" type="text/css">
+     <meta name="description" content="A machine for generating verbs and actions">
+</head>
+<body>
+  <center>
+    <br><br><br><br><br><br><br><br><br>
+<div id="word"></div>
+  <script language="javascript">
+  var words = ["roll", "crease", "fold", "store", "bend", "shorten", "twist", "dapple", "crumple", "shave", "tear", "chip", "split", "cut", "sever", "drop", "remove", "simplify", "differ", "disarrange", "open", "mix", "splash", "knot", "spill", "curve", "lift", "inlay", "impress", "fire", "flood", "smear", "rotate", "swirl", "support", "hook", "suspend", "spread", "hang", "collect", "tension", "gravity", "nature", "grouping", "layering", "felting", "grasp", "tighten", "bundle", "heap", "gather", "scatter", "arrange", "repair", "discard", "pair", "distribute", "surfeit", "compliment", "eclose", "surround", "encircle", "hole", "cover", "wrap", "dig", "tie", "bind", "weave", "join", "match", "laminate", "bond", "hinge", "mark", "expand", "dilute", "light", "modulate", "distill", "waves", "electromagnetic", "inertia", "ionization", "polarization", "refraction", "tides", "reflection", "equilibrium", "symmetry", "friction", "stretch", "bounce", "erase", "spray", "systematize", "refer", "force", "mapping", "location", "context", "time", "cabonization", "continue"];
+
+  var word = words[Math.floor(Math.random() * words.length)];
+
+  console.log(word);
+
+  document.getElementById("word").textContent = word;
+
+  var getRandomWord = function () {
+      return words[Math.floor(Math.random() * words.length)];
+  };
+
+</script>
+    
+    <br><br>
+    <div id="place"></div>
+  <script language="javascript">
+  var places = ["inside", "outside"];
+
+  var place = places[Math.floor(Math.random() * places.length)];
+
+  console.log(place);
+
+  document.getElementById("place").textContent = place;
+
+  var getRandomPlace = function () {
+      return places[Math.floor(Math.random() * places.length)];
+  };
+
+</script>
+    
+    <br><br>
+    <div id="time"></div>
+  <script language="javascript">
+  var times = ["once", "many"];
+
+  var time = times[Math.floor(Math.random() * times.length)];
+
+  console.log(time);
+
+  document.getElementById("time").textContent = time;
+
+  var getRandomTime = function () {
+      return times[Math.floor(Math.random() * times.length)];
+  };
+
+</script>
+  
+  </center>
+</body>
+</html>
